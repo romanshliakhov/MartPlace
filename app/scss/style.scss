@@ -1,11 +1,19 @@
-html {
-    box-sizing: border-box;
+@import '_vars';
+@import '_global';
+@import '_fonts';
+
+
+.header__inner { 
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
 }
 
-*, 
-*::before,
-*::after {
-    box-sizing: inherit;
+.header__sign {
+    margin-left: auto;
+    margin-right: 51px;
+    font-family: 'Quicksand-Regular', sans-serif; 
+    font-size: 14px;
+    line-height: 28px;
 }
-
-
