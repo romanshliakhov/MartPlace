@@ -1,11 +1,10 @@
 @import '_vars';
 @import '_global';
 @import '_fonts';
-
+// header
 .header__top{ 
     background-color: #eef1f3;
     height: 100px;
-
 }
 
 .header__inner { 
@@ -15,41 +14,76 @@
     align-items: center;
 }
 
+.header__logo {
+    margin-left: 7px;
+}
+
 .header__sign {
     margin-left: auto;
-    margin-right: 51px;
+    margin-right: 40px;
+    padding: 4px 18px;
+    background-color: $blue;
+    border-radius:18px;
+    color: #fff;
     font-family: 'Quicksand-Bold', sans-serif; 
     font-weight: 500;
     font-size: 14px;
-    line-height: 28px;
-    color: #fff;
-    background-color: $blue;
-    padding: 12px;
-    width: 140px;
-    border-radius: 10%;
-    text-align: center;
+    line-height: 28px;        
 }
 
-.menu {
+.header__avatar {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.header__avatar-img {
+    border-radius: 50%;
+    border: 1px solid #7c7979;
+    height: 50px;
+    width: 50px;    
+}
+
+.header__profile {
+    display: flex;    
+}
+
+.header__info-nickname {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+    font-family: 'Quicksand-Bold', sans-serif; 
+    font-weight: 500;   
+}
+
+.header__info-balance {
+    font-size: 15px;
+    line-height: 30px;    
+    color:$blue;   
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-weight: 500;
+}
+
+.header__nav {
     display: flex;
     align-items: center;
     height: 80px;
 }
 
-.menu__list {
+.header__nav-list {
     padding: 0;
     margin: 0;
 }
 
-.menu__item {
+.header__nav-item {
     display: inline-block;
 }
 
-.menu__item + .menu__item {
+.header__nav-item + .header__nav-item {
     margin-left: 30px;
 }
 
-.menu__link {
+.header__nav-link {
     font-family: 'Quicksand-Bold', sans-serif; 
     font-size: 15px;
     font-weight: 500;
@@ -60,4 +94,36 @@
 
 .header__search {
     margin-left: auto;
+}
+// search section
+.search {
+    background-color: #2a4dcf;
+    min-height: 725px;
+    
+    
+}
+
+.search__inner {
+    padding-top: 180px 0 235px;       
+    text-align: center;
+}
+
+.search__title {
+    margin-bottom: 35px;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.search__title-bold {
+    display: block;
+}
+
+.search__descr {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+
+.search__form {
+    max-width: 810px;
+
 }

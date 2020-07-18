@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MartPlace</title>
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <title>MartPlace</title>    
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,25 +16,26 @@
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo" href="#">
-                        <img class="header__img" src="images/logo.png" alt="MartPlace Logo">
+                        <img class="header__logo-img" src="images/logo.png" alt="MartPlace Logo">
                     </a>
 
                     <a class="header__sign" href="#">Become a Seller</a>
 
                     <div class="header__icons">
-                        <a class="header__notification" href="#"></a>
-                        <a class="header__message" href="#"></a>
-                        <a class="header__basket" href="#"></a>
+                        <a class="header__icons-notification" href="#"></a>
+                        <a class="header__icons-message" href="#"></a>
+                        <a class="header__icons-basket" href="#"></a>
                     </div>
 
                     <div class="header__profile">
-                        <a href="#">
-                            <img src="" alt="">
+                        <a class="header__avatar" href="#">
+                            <img class="header__avatar-img" src="images/avatar.jpg" alt="">
                         </a>
 
-
-
-
+                        <div class="header__info">
+                            <a class="header__info-nickname" href="#">Mr. Universe</a>
+                            <a class="header__info-balance" href="#">$20.45</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,35 +43,57 @@
 
         <div class="header__menu">
             <div class="container">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Home</a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Home</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">All products</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">All products</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Wordpress</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Wordpress</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Features</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Features</a>
                         </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Pages</a>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Pages</a>
                         </li>
                     </ul>
 
                     <form class="header__search">
                         <input class="header__search-input" type="text" placeholder="Search product here..." required>
                         <button class="header__search-btn" type="submit">
-                            <img class="header__search-img" src="images/icons/search.svg" alt="">
+                            
                         </button>
                     </form>
                 </nav>
             </div>
         </div>
     </header>
+
+    <section class="search">
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__title">Create Your Own<span class="search__title-bold">Digital Product Marketplace</span></div>
+                <div class="search__descr">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
+
+                <div class="search__products">
+                    <a class="search__products-all" href="#">View All Products</a>
+                    <a class="search__products-popular" href="#">Popular Products</a>
+                </div>
+
+                <form class="search__form" >
+                    <input type="text" placeholder="Search your products..." required>
+                    <button type="submit"></button>
+                </form>
+
+                <button class="search__btn">Search Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
