@@ -94,7 +94,6 @@
 .header__search {
     margin-left: auto;
     position: relative;
-
 }
 
 .header__search-input {    
@@ -147,18 +146,18 @@
     -ms-transform: scale(1.1);
     transform: scale(1.1);   
 }
-// search section
-.search {
-    background-color: #2a4dcf;
+// view section
+.view {
+    background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
     min-height: 725px;       
 }
 
-.search__inner {
+.view__inner {
     padding: 180px 0 235px;       
     text-align: center;
 }
 
-.search__title {
+.view__title {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     margin-bottom: 30px;
@@ -167,13 +166,13 @@
     color: #fff;
 }
 
-.search__title-bold {
-    display: block;
+.view__title-bold {
+    display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
 
-.search__descr {
+.view__descr {
     margin-bottom: 70px;    
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
@@ -181,27 +180,75 @@
     color: #fff;
 }
 
-.search__products {
+.view__products {
     margin: 0 15px;
     padding: 11px 30px;
 }
 
-.search__form {
+.view__form {
     max-width: 810px;
 }
 // products
 .products {
     padding: 120px 0;
-    background-color: $hex;
+    background-color: $hex;    
 }
 
-.products__all {
-    text-align: center;
-    color: #fff;
-    padding: 20px 35px;
-    background-color: #0674ec;
+.products__header {
+    margin-bottom: 30px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+    background-color: #fff;
+}
+
+.products__header-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+}
+
+.products__header-filter {
+    display: block;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    color: $shadowgrey;
+    line-height: 2;    
+    
+}
+
+.products__categories {
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #fff;   
+}
+
+.products__categories-btn {
     border: none;
-    outline: transparent;
-    border-radius: 27.5px;
+    background-color: #f1f3f6;
+    color: #747b86;
+    padding: 7px 19px;
+    border-radius: 16px;
+}
+
+.products__categories-btn + .products__categories-btn {
+    margin-left: 5px;
+}
+
+
+.products__all {
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;       
+    color: #fff;
+    padding: 22px 33px;
+    border-radius: 30px;
+    background-color: $blue;
+    border: none;
+    outline: transparent;    
     cursor: pointer;
 }
