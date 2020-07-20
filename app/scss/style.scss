@@ -25,8 +25,8 @@
     background-color: $blue;
     border-radius:18px;
     color: #fff;
-    font-family: 'Quicksand-Bold', sans-serif; 
-    font-weight: 500;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300;
     font-size: 14px;
     line-height: 28px;        
 }
@@ -52,16 +52,14 @@
     font-size: 16px;
     line-height: 22px;
     color: #333;
-    font-family: 'Quicksand-Bold', sans-serif; 
-    font-weight: 500;   
+    font-family: 'Quicksand', sans-serif;     
 }
 
 .header__info-balance {
     font-size: 15px;
     line-height: 30px;    
     color:$blue;   
-    font-family: 'Quicksand-Bold', sans-serif;
-    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;   
 }
 
 .header__nav {
@@ -85,9 +83,9 @@
 }
 
 .header__nav-link {
-    font-family: 'Quicksand-Bold', sans-serif; 
+    font-family: 'Quicksand', sans-serif; 
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;    
     line-height: 42px;
     color: #333;
     text-transform: uppercase;
@@ -106,7 +104,7 @@
     border-radius: 23px;
     border: 1px solid #d9dfe5;
     outline: transparent;
-    font-family: 'Quicksand-Bold', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #898f96;
@@ -129,7 +127,26 @@
     color: #fff;
 }
 
+.lnr {
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;        
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+    transition: 0.3s;  
+}
 
+.lnr-magnifier:before,
+.lnr-magnifier:hover{
+    content: "\e86f"; 
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);   
+}
 // search section
 .search {
     background-color: #2a4dcf;
@@ -142,21 +159,49 @@
 }
 
 .search__title {
-    margin-bottom: 35px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
     font-size: 60px;
     line-height: 70px;
+    color: #fff;
 }
 
 .search__title-bold {
     display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .search__descr {
-    margin-bottom: 70px;
+    margin-bottom: 70px;    
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.search__products {
+    margin: 0 15px;
+    padding: 11px 30px;
 }
 
 .search__form {
     max-width: 810px;
+}
+// products
+.products {
+    padding: 120px 0;
+    background-color: $hex;
+}
 
+.products__all {
+    text-align: center;
+    color: #fff;
+    padding: 20px 35px;
+    background-color: #0674ec;
+    border: none;
+    outline: transparent;
+    border-radius: 27.5px;
+    cursor: pointer;
 }

@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -64,35 +65,100 @@
 
                     <form class="header__search">
                         <input class="header__search-input" type="text" placeholder="Search product here..." required>
-                        <button class="header__search-btn" type="submit"></button>
+                        <button class="header__search-btn lnr lnr-magnifier" type="submit"></button>
                     </form>
                 </nav>
             </div>
         </div>
     </header>
-
-    <section class="search">
+    <!-- search -->
+    <section class="view">
         <div class="container">
-            <div class="search__inner">
-                <div class="search__title">Create Your Own<span class="search__title-bold">Digital Product Marketplace</span></div>
-                <div class="search__descr">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
+            <div class="view__inner">
+                <div class="view__title">Create Your Own<span class="viewtitle-bold">Digital Product Marketplace</span></div>
+                <div class="view__descr">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</div>
 
-                <div class="search__products">
-                    <a class="search__products-all" href="#">View All Products</a>
-                    <a class="search__products-popular" href="#">Popular Products</a>
+                <div class="view__btn">
+                    <a class="view__btn-all " href="#">View All Products</a>
+                    <a class="view__btn-popular" href="#">Popular Products</a>
                 </div>
 
-                <form class="search__form" >
+                <form class="view__form" >
                     <input type="text" placeholder="Search your products..." required>
                     <button type="submit"></button>
                 </form>
 
-                <button class="search__btn">Search Now</button>
+                <button class="view__btn">Search Now</button>
                 </div>
             </div>
         </div>
     </section>
+    
+    <main class="features">
+        <div class="container">
 
+        </div>
+    </main>
+    <!-- products -->
+    <main class="products">
+        <div class="container">
+            <div class="products__header">
+                <div class="products__title">Newest Release Products</div>
+                <div class="products__filter">Filter by:</div>
+                <div class="products__dots"></div>
+            </div>
+
+            <div class="products__filters-btn">
+                <button class="products__btn">Plugins</button>
+                <button class="products__btn">WordPress</button>
+                <button class="products__btn">Site Template</button>
+                <button class="products__btn">PSD Template</button>
+                <button class="products__btn">Joomla</button>
+                <button class="products__btn">User Interface</button>
+                <button class="products__btn">Landing Page</button>
+                <button class="products__btn">Software</button>
+            </div>
+
+            <div class="products__catalogue">
+                <div class="product__items">
+                    <a class="product__item-img" href="#" style=""></a>
+                    <div class="product__item-desc">
+                        <a class="product__item-title" href="#">E-commerce Shopping Cart</a>
+                        <div class="product__item-links">
+                            <div class="product__item-autor">
+                                <img class="product__autor-avatar" src="" alt="">
+                                <a class="product__autor-name" href="#">
+                                    <span></span>Theme-Valley
+                                </a>
+                            </div>
+
+                            <div class="product__item-type">
+                                <svg src="" alt=""></svg>
+                                <a href="#">Plugin</a>
+                            </div>                           
+                        </div>
+
+                        <div class="product__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                        the mattis, leo quam aliquet congue.
+                        </div>
+                    </div>
+
+                    <div class="product__item-info">
+                        <div class="product__price"><span>$</span>20</div>
+                        <div class="product__likes"><span class="lnr lnr-heart"></span>20</div>
+                        <div class="product__rates">(05)</div>
+                        <div class="product__solds"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+             
+
+            <button class="products__all">All New Products</button>
+        </div>
+    </main>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
