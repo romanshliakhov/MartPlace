@@ -139,15 +139,12 @@
             </div>
         </div>
     </section>
-    <!-- features -->
+    <!-- weekly -->
     <section class="weekly">
         <div class="container">
-            <div class="weekly__top">
-                <div class="weekly__top-text">Weekly Featured Products</div>
-                <div class="weekly__top-arrows">
-                    <button class="weekly__arrow-prev"></button>
-                    <button class="weekly__arrow-next"></button>
-                </div>                
+            <div class="weekly__inner">
+                <div class="weekly__inner-text">Weekly Featured Products</div>
+                <div class="weekly__inner-arrows"></div>                
             </div>
 
             <div class="weekly__slider">
@@ -166,29 +163,28 @@
                             <div class="weekly__info-autor">
                                 <div class="weekly__autor">
                                     <img class="weekly__autor-img" src="" alt="">
-                                    <a class="weekly__autor-nickname" href="#"></a>
+                                    <a class="weekly__autor-nickname" href="#">AazzTech</a>
                                 </div>
 
                                 <div class="weekly__autor-cms">
                                     <img class="weeekly__cms-img" src="" alt="">
-                                    <a class="weeekly__cms-title" href="#"></a>                                
+                                    <a class="weeekly__cms-title" href="#">WordPress</a>                                
                                 </div>
                             </div>
 
-                            <p class="weekly__info-desc">
-
+                            <p class="weekly__info-desc">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                             </p>
 
                             <div class="weekly__info-tags">
-                                <a class="weekly__tag" href="#"></a>
-                                <a class="weekly__tag" href="#"></a>
-                                <a class="weekly__tag" href="#"></a>
+                                <a class="weekly__tag" href="#">website</a>
+                                <a class="weekly__tag" href="#">plugin</a>
+                                <a class="weekly__tag" href="#">landing page</a>
                             </div>
 
                             <div class="weekly__info-details">
-                                <div class="weekly__detail-price"></div>
-                                <button class="weekly__detail-likes"></button>
-                                <button class="weekly__detail-solds"></button>
+                                <div class="weekly__detail-price">$10 - $50</div>
+                                <button class="weekly__detail-likes">46</button>
+                                <button class="weekly__detail-solds">634</button>
                                 <div class="weekly__detail-rates"></div> 
                             </div>                           
                         </div>
@@ -203,7 +199,14 @@
             <div class="products__header">
                 <div class="products__header-title">Newest Release Products</div>
                 <div class="products__header-filter">Filter by:
-                    <div class="products__header-dots"></div>
+                    <div class="products__filter-dots">
+                        <button class="products__filter-btn" type="button" data-sort="random">Trending items</button>
+                        <button class="products__filter-btn" type="button" data-filter="category-best">Best seller</button>
+                        <button class="products__filter-btn" type="button" data-sort="rate:asc">Best rating</button>
+                        <button class="products__filter-btn" type="button" data-sort="price:desc">Low price</button>
+                        <button class="products__filter-btn" type="button" data-sort="price:asc">High price</button>
+
+                    </div>
                 </div>                
             </div>
 
@@ -248,12 +251,12 @@
                         <div class="product__rates">(05)</div>
                         <div class="product__solds"></div>
                     </div>
-
-
                 </div>
             </div>             
-
-            <button class="products__all">All New Products</button>
+            
+            <div class="products__all">
+                <a class="products__all-btn" href="#">All New Products</a>
+            </div>            
         </div>
     </section>
 
