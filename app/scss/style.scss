@@ -650,14 +650,11 @@
 
 .product__desc-autor {
     display: flex;
-    align-items: center;
-    margin-right: 21px;
-    width: 100px;
 }
 
 .product__autor-avatar {    
-    max-width: 28px;
-    max-height: 28px;
+    width: 28px;
+    height: 28px;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
@@ -666,33 +663,36 @@
     border-radius: 50%;
 }
 
-.product__link-type {
-    color: $purple;
-    position: relative;
+.product__desc-type {
+    display: flex;
+    align-items: center;
+}
+
+.product__desc-type {
+    color: $purple;    
     padding-left: 26px;
 }
 
-.product__type-img {
-    max-width: 18px;
-    max-height: 18px;
+.product__type-img {        
+    width: 13px;
+    height: 17px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
-    object-fit: cover;
-    border-radius: 50%;
+    background-size: cover;         
 }
 
-.product__link-name {
+.product__autor-name {
     font-size: 15px;
     line-height: 30px;
     color: #000; 
     margin-left: 5px;  
 }
 
-.product__link-name {
+.product__type-name {
     font-size: 15px;
     line-height: 30px;
     color: $purple; 
+    margin-left: 5px; 
 }
 
 .product__desc-text {
