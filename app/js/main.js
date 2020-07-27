@@ -3,8 +3,7 @@ $(function(){
 
     
     $(".rate-star").rateYo({
-        rating: 5,
-        readOnly: true,
+        rating: 5,        
         fullStar: true,
         starWidth: "15px",
         spacing: "3px",
