@@ -3,7 +3,27 @@
     src: url('../fonts/Quicksand.woff2') format('woff2'), 
          url('../fonts/Quicksand.woff') format('woff'),
          url('../fonts/Quicksand.ttf') format('truetype');     
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand'; 
+    src: url('../fonts/Quicksand-Medium.woff2') format('woff2'), 
+         url('../fonts/Quicksand.woff') format('woff'),
+         url('../fonts/Quicksand.ttf') format('truetype');     
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand'; 
+    src: url('../fonts/Quicksand-SemiBold.woff2') format('woff2'), 
+         url('../fonts/Quicksand-SemiBold.woff') format('woff'),
+         url('../fonts/Quicksand-SemiBold.ttf') format('truetype');     
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
