@@ -15,10 +15,15 @@ a {
 
 body {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;    
     padding: 0 15px;
+}
+
+.solds {
+    color: $blue;
 }

@@ -4,7 +4,7 @@
 
 // header
 .header__top {
-    background-color: #eef1f3;
+    background-color: $bg;
     height: 100px;
 }
 
@@ -25,9 +25,7 @@
     padding: 4px 18px;
     background-color: $blue;
     border-radius: 18px;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    color: #fff;        
     font-size: 14px;
     line-height: 28px;
     transition: 0.3s;
@@ -48,8 +46,7 @@
 .header__icon {
     text-decoration: none;
     position: relative;
-    margin-right: 24px;
-    // padding-top: 4px;
+    margin-right: 24px;    
     width: 30px;
     height: 30px;
     text-align: center;
@@ -71,8 +68,7 @@
     content: "\e858";
 }
 
-.header__icon-notification {
-    font-family: "Quicksand", sans-serif;
+.header__icon-notification {    
     position: absolute;
     top: -11px;
     right: -8px;
@@ -82,15 +78,14 @@
     font-weight: 500;
     border-radius: 12px;
     padding: 3px 7px;
-    background-color: #ff6a6c;
+    background-color: $red;
 }
 
 .lnr-envelope:before {
     content: "\e818";
 }
 
-.header__icon-message {
-    font-family: "Quicksand", sans-serif;
+.header__icon-message {    
     position: absolute;
     top: -11px;
     right: -8px;
@@ -100,15 +95,14 @@
     font-weight: 500;
     border-radius: 12px;
     padding: 3px 7px;
-    background-color: #62d03b;
+    background-color: $green;
 }
 
 .lnr-cart:before {
     content: "\e82e";
 }
 
-.header__icon-basket {
-    font-family: "Quicksand", sans-serif;
+.header__icon-basket {    
     position: absolute;
     top: -11px;
     right: -8px;
@@ -128,7 +122,7 @@
 
 .header__avatar-img {
     border-radius: 50%;
-    border: 1px solid #7c7979;
+    border: 1px solid $border;
     height: 50px;
     width: 50px;
 }
@@ -141,15 +135,15 @@
     display: block;
     font-size: 16px;
     line-height: 22px;
-    color: #333;
-    font-family: 'Quicksand', sans-serif;
+    color: #333;    
+    font-weight: 500;
 }
 
 .header__info-balance {
     font-size: 15px;
     line-height: 30px;
     color: $blue;
-    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;    
 }
 
 .header__nav {
@@ -172,8 +166,7 @@
     margin-left: 30px;
 }
 
-.header__nav-link {
-    font-family: 'Quicksand', sans-serif;
+.header__nav-link {    
     font-size: 15px;
     font-weight: 700;
     line-height: 42px;
@@ -196,12 +189,11 @@
     height: 46px;
     min-width: 360px;
     border-radius: 23px;
-    border: 1px solid #d9dfe5;
-    outline: transparent;
-    font-family: 'Quicksand', sans-serif;
+    border: 1px solid $bginput;
+    outline: transparent;    
     font-size: 14px;
     font-weight: 500;
-    color: #898f96;
+    color: $tinput;    
 }
 
 .header__search-input:focus {
@@ -221,27 +213,18 @@
     color: #fff;
 }
 
-.lnr {
-    font-family: 'Linearicons-Free';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: 0.3s;
-}
-
-.lnr-magnifier:before,
-.lnr-magnifier:hover {
+.lnr-magnifier:before {
     content: "\e86f";
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    font-family: "Linearicons-Free", sans-serif;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;        
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;         
+    cursor: pointer;  
 }
-
 // view section
 .view {
     background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
@@ -254,8 +237,7 @@
     text-align: center;
 }
 
-.view__title {
-    font-family: 'Quicksand', sans-serif;
+.view__title {    
     font-weight: 400;
     margin-bottom: 30px;
     font-size: 60px;
@@ -264,22 +246,19 @@
 }
 
 .view__title-bold {
-    display: inline-block;
-    font-family: 'Quicksand', sans-serif;
+    display: inline-block;    
     font-weight: 700;
 }
 
 .view__descr {
-    margin-bottom: 70px;
-    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 70px;   
     font-size: 20px;
     font-weight: 500;
     color: #fff;
 }
 
 .view__links {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 16px;    
 }
 
 .view__link-all:hover,
@@ -363,7 +342,7 @@
 
 .view__form-btn {
     min-height: 55px;
-    background-color: #0674ec;
+    background-color: $blue;
     font-size: 16px;
     font-weight: 400;
     padding: 19px 67px;
@@ -429,7 +408,6 @@
     line-height: 30px;
     min-height: 120px;
 }
-
 // weekly
 .weekly {
     padding: 120px 0;
@@ -453,41 +431,51 @@
 }
 
 .weekly__arrows {
-    display: inline-block;
-    // border: none;
-    // background-color: #7347c1;
-    // color: #ffffff;
-    // padding: 15px 20px;    
-    // cursor: pointer;
-    // outline: transparent;
-    // font-size: 14px;
-    // font-weight: 400; 
+    display: inline-block;    
 }
 
-.weekly__arrow-prev {
-    border-radius: 30px 0 0 30px;
-    border: none;
-    background-color: #7347c1;
-    color: #ffffff;
-    padding: 15px 20px;
-    cursor: pointer;
-    outline: transparent;
-    font-size: 14px;
-    font-weight: 400;
+// .weekly__arrow-prev {
+//     border-radius: 30px 0 0 30px;
+//     border: none;
+//     background-color: $purple;
+//     color: #fff;
+//     padding: 15px 20px;
+//     cursor: pointer;
+//     outline: transparent;
+//     font-size: 14px;
+//     font-weight: 400;
+// }
+
+// .weekly__arrow-next {
+//     border-radius: 0px 30px 30px 0;
+//     border: none;
+//     background-color: $purple;
+//     color: #fff;
+//     padding: 15px 20px;
+//     cursor: pointer;
+//     outline: transparent;
+//     font-size: 14px;    
+// }
+// ОСТАНОВИЛСЯ ТУТ
+.weekly__product {
+    display: flex;
+    justify-content: space-between;       
 }
 
-.weekly__arrow-next {
-    border-radius: 0px 30px 30px 0;
-    border: none;
-    background-color: #7347c1;
-    color: #ffffff;
-    padding: 15px 20px;
-    cursor: pointer;
-    outline: transparent;
-    font-size: 14px;
-    font-weight: 400;
+
+
+.weekly__content-img {
+    height: 100%;
+    max-width: 555px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;    
+    box-shadow: 0px 2px 4px 0px rgba(108,111,115,0.1);
 }
 
+// ВОТ ТУТ КОНЕЦ
 // products
 .products {
     padding: 120px 0;
@@ -500,8 +488,7 @@
     align-items: center;
     padding: 39px 0px 41px 30px;
     color: #000;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 30px;    
     box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     background-color: #fff;
@@ -537,8 +524,7 @@
     min-width: 183px;
     background-color: #fff;
     color: $shadowgrey;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 15px;    
     line-height: 28px;
     box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
     border-radius: 3px;
@@ -679,7 +665,6 @@
 .product__desc-title {
     padding-bottom: 11px;
     color: #000;
-    font-family: Quicksand;
     font-size: 20px;
     font-weight: 500;
 }
@@ -742,25 +727,60 @@
 .product__item-info {
     padding: 15px 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 15px;    
 }
 
+.product__info-price {    
+    font-weight: 700;
+    color: $blue;
+    background-color: rgba(6,116,236,0.1);
+    padding: 7px 17px;
+    border-radius: 15px;    
+}
 
-// products end
+.product__info-likes,
+.product__info-solds {
+    position: relative;
+    padding-left: 22px;
+}
+
+.product__info-likes::before {
+    content: "\e813";
+    position: absolute;
+    font-size: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 1px;
+    font-family: "Linearicons-Free";
+    color: $purple;
+    cursor: pointer;
+}
+
+.product__info-solds:before {
+    content: "\e82e";
+    position: absolute;
+    font-size: 15px;
+    font-family: "Linearicons-Free";
+    color: #0674ec;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
 .products__all {
     text-align: center;
     margin: 0 auto;
-    margin-top: 29px;
-    
+    margin-top: 29px;    
 }
 
 .products__all-btn {
     font-size: 16px;
-    color: #ffffff;
-    font-weight: 400;
-    background-color: #0674ec;
+    color: #fff;    
+    background-color: $blue;
     padding: 22px 39px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
