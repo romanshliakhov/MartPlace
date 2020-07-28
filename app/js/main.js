@@ -1,5 +1,10 @@
 $(function(){
-        
+    
+    
+
+
+
+    
     $(".rate-star").rateYo({
         rating: 5,        
         fullStar: true,
