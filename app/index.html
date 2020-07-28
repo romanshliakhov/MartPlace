@@ -178,9 +178,9 @@
                             </p>
 
                             <div class="weekly__info-tags">
-                                <a class="weekly__tag" href="#">website</a>
-                                <a class="weekly__tag" href="#">plugin</a>
-                                <a class="weekly__tag" href="#">landing page</a>
+                                <button class="weekly__tag" href="#">website</button>
+                                <button class="weekly__tag" href="#">plugin</button>
+                                <button class="weekly__tag" href="#">landing page</button>
                             </div>
 
                             <div class="weekly__info-details">
@@ -205,28 +205,28 @@
                 <div class="products__header-filter">Filter by:
                     <div class="products__filter-inner">
                         <button class="products__filter-btn" type="button" data-sort="random">Trending items</button>
-                        <button class="products__filter-btn" type="button" data-filter="category-best">Best seller</button>
-                        <button class="products__filter-btn" type="button" data-sort="rate:asc">Best rating</button>
-                        <button class="products__filter-btn" type="button" data-sort="price:desc">Low price</button>
-                        <button class="products__filter-btn" type="button" data-sort="price:asc">High price</button>
+                        <button class="products__filter-btn" type="button" data-sort="rate:asc">Best seller</button>
+                        <button class="products__filter-btn" type="button" data-sort="rate:desc">Best rating</button>
+                        <button class="products__filter-btn" type="button" data-sort="price:asc">Low price</button>
+                        <button class="products__filter-btn" type="button" data-sort="price:desc">High price</button>
                     </div>
                 </div>
             </div>
 
             <div class="products__categories">
-                <button class="products__categories-btn">Plugins</button>
-                <button class="products__categories-btn">WordPress</button>
-                <button class="products__categories-btn">Site Template</button>
-                <button class="products__categories-btn">PSD Template</button>
-                <button class="products__categories-btn">Joomla</button>
-                <button class="products__categories-btn">User Interface</button>
-                <button class="products__categories-btn">Landing Page</button>
-                <button class="products__categories-btn">Software</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-plugins">Plugins</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-wordpress">WordPress</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-site_template">Site Template</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-psd">PSD Template</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-joomla">Joomla</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-user_interface">User Interface</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-landings_page">Landing Page</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-software">Software</button>
             </div>
 
             <div class="products__catalogue">
                 <!-- item1 -->
-                <div class="product__item">
+                <div class="product__item mix category-wordpress category-all" data-order="1" data-rate="2" data-price="20"> 
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
                         <div class="product__content-hover">
@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <!-- item2 -->
-                <div class="product__item">
+                <div class="product__item mix category-psd category-all" data-order="2" data-rate="1" data-price="18">
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product2.jpg);"></a>
                         <div class="product__content-hover">
@@ -298,7 +298,7 @@
                     </div>
                 </div>
                 <!-- item3 -->
-                <div class="product__item">
+                <div class="product__item mix category-site_template category-all" data-order="3" data-rate="3" data-price="35">
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
                         <div class="product__content-hover">
@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <!-- item4 -->
-                <div class="product__item">
+                <div class="product__item mix category-plugins category-all" data-order="1" data-rate="4" data-price="10">
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
                         <div class="product__content-hover">
@@ -370,7 +370,7 @@
                     </div>
                 </div>
                 <!-- item5 -->
-                <div class="product__item">
+                <div class="product__item mix category-psd category-all" data-order="2" data-rate="5" data-price="100">
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product2.jpg);"></a>
                         <div class="product__content-hover">
@@ -407,7 +407,7 @@
                 </div>
 
                 <!-- item6 -->
-                <div class="product__item">
+                <div class="product__item mix category-site_template category-all" data-order="3" data-rate="6" data-price="60">
                     <div class="product__item-content">
                         <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
                         <div class="product__content-hover">
@@ -441,11 +441,11 @@
                         </div>
                         <div class="product__info-solds"><span class="solds">68</span></div>
                     </div>
-                </div>
+                </div>                             
+            </div> 
 
-                <div class="products__all">
-                    <a class="products__all-btn" href="#">All New Products</a>
-                </div>              
+            <div class="products__all">
+                <button class="products__all-btn" type="button" data-filter=".category-all">All New Products</button>
             </div> 
         </div>
     </section>

@@ -433,36 +433,11 @@
 .weekly__arrows {
     display: inline-block;    
 }
-
-// .weekly__arrow-prev {
-//     border-radius: 30px 0 0 30px;
-//     border: none;
-//     background-color: $purple;
-//     color: #fff;
-//     padding: 15px 20px;
-//     cursor: pointer;
-//     outline: transparent;
-//     font-size: 14px;
-//     font-weight: 400;
-// }
-
-// .weekly__arrow-next {
-//     border-radius: 0px 30px 30px 0;
-//     border: none;
-//     background-color: $purple;
-//     color: #fff;
-//     padding: 15px 20px;
-//     cursor: pointer;
-//     outline: transparent;
-//     font-size: 14px;    
-// }
 // ОСТАНОВИЛСЯ ТУТ
 .weekly__product {
     display: flex;
     justify-content: space-between;       
 }
-
-
 
 .weekly__content-img {
     height: 100%;
@@ -475,6 +450,96 @@
     box-shadow: 0px 2px 4px 0px rgba(108,111,115,0.1);
 }
 
+.weekly__info {
+    padding: 50px 50px 25px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.weekly__info-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.weekly__info-autor {
+    display: flex;    
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.weekly__autor {
+    display: flex;
+    align-items:center;
+}
+
+.weekly__autor-nickname {
+    margin-left: 9px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.weekly__autor-cms {
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.weeekly__cms-title {
+    margin-left: 9px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $purple;
+}
+
+.weekly__info-desc {
+    max-width: 475px;
+    padding-bottom: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #555;
+}
+
+.weekly__info-tags {
+    margin-bottom: 43px;    
+}
+
+.weekly__tag {
+    color: $shadowgrey;
+    border-radius: 14px;
+    background-color: #f1f3f6;
+    padding: 7px 14px;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+}
+
+.weekly__info-details {
+    padding: 23px 0 0;    
+    display: flex;    
+    justify-content: space-between;    
+    align-items: center;
+    border-top: 1px solid $grey;
+}
+
+.weekly__detail-price {
+    color: #fff;
+    background-color: $blue;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 18px;
+    border-radius: 16px;
+}
+
+.weekly__detail-likes {
+
+}
+
+.weekly__detail-solds {
+
+}
 // ВОТ ТУТ КОНЕЦ
 // products
 .products {
@@ -746,7 +811,7 @@
     padding-left: 22px;
 }
 
-.product__info-likes::before {
+.product__info-likes:before {
     content: "\e813";
     position: absolute;
     font-size: 15px;
@@ -783,7 +848,10 @@
     background-color: $blue;
     padding: 22px 39px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 30px;    
+    outline: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .products__all-btn:hover {
