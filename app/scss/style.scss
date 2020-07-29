@@ -194,7 +194,7 @@
 
     &__search {
         margin-left: auto;
-        position: relative;
+        position: relative;       
     }
 
     &__search-input {
@@ -209,7 +209,9 @@
         color: $tinput;
         transition: 0.3s;
 
-        &:focus {
+        
+        &:hover,
+        &:active {
             border: 2px solid $blue;
         }
     }
@@ -240,7 +242,6 @@
         }
     }
 }
-
 // nav end
 // view section
 .view {
@@ -399,7 +400,6 @@
         }
     }
 }
-
 // view end
 // advantage start
 .adv {
