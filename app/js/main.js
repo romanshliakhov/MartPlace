@@ -13,7 +13,7 @@ $(function(){
         fade: true,
         appendArrows: $('.weekly__inner-arrows'),
         nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',             
+        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',                
     });
     
     var mixer = mixitup('.products__catalogue');

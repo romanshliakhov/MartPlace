@@ -13,70 +13,68 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo" href="#">
-                        <img class="header__logo-img" src="images/logo.png" alt="MartPlace Logo">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__inner-logo" href="#">
+                    <img class="header__logo-img" src="images/logo.png" alt="MartPlace Logo">
+                </a>
+
+                <a class="header__sign" href="#">Become a Seller</a>
+
+                <div class="header__icons">
+                    <a class="header__icon header__icon--alarm lnr-alarm" href="#">
+                        <span class="header__info header__info--notification">25</span>
+                    </a>
+                    <a class="header__icon header__icon--envelope lnr-envelope" href="#">
+                        <span class="header__info header__info--message">6</span>
+                    </a>
+                    <a class="header__icon header__icon--cart lnr-cart" href="#">
+                        <span class="header__info header__info--basket">2</span>
+                    </a>
+                </div>
+
+                <div class="header__profile">
+                    <a class="header__avatar" href="#">
+                        <img class="header__avatar-img" src="images/avatar.jpg" alt="">
                     </a>
 
-                    <a class="header__sign" href="#">Become a Seller</a>
-
-                    <div class="header__icons">
-                        <a class="header__icon lnr-alarm" href="#">
-                            <span class="header__icon-notification">25</span>
-                        </a>
-                        <a class="header__icon lnr-envelope" href="#">
-                            <span class="header__icon-message">6</span>
-                        </a>
-                        <a class="header__icon lnr-cart" href="#">
-                            <span class="header__icon-basket">2</span>
-                        </a>
-                    </div>
-
-                    <div class="header__profile">
-                        <a class="header__avatar" href="#">
-                            <img class="header__avatar-img" src="images/avatar.jpg" alt="">
-                        </a>
-
-                        <div class="header__info">
-                            <a class="header__info-nickname" href="#">Mr. Universe</a>
-                            <a class="header__info-balance" href="#">$20.45</a>
-                        </div>
+                    <div class="header__account">
+                        <a class="header__account-nickname" href="#">Mr. Universe</a>
+                        <a class="header__account-balance" href="#">$20.45</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="header__menu">
-            <div class="container">
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Home</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">All products</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Wordpress</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Features</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Pages</a>
-                        </li>
-                    </ul>
-
-                    <form class="header__search">
-                        <input class="header__search-input" type="text" placeholder="Search product here..." required>
-                        <button class="header__search-btn lnr-magnifier" type="submit"></button>
-                    </form>
-                </nav>
-            </div>
-        </div>
     </header>
+    <!-- navigation -->
+    <nav class="nav">
+        <div class="container">
+            <nav class="nav__inner">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">All products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Wordpress</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Pages</a>
+                    </li>
+                </ul>
+
+                <form class="nav__search">
+                    <input class="nav__search-input" type="text" placeholder="Search product here..." required>
+                    <button class="nav__search-btn lnr-magnifier" type="submit"></button>
+                </form>
+            </nav>
+        </div>
+    </nav>
     <!-- view -->
     <section class="view">
         <div class="container">
@@ -121,8 +119,6 @@
                     <p class="adv__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                         scelerisque
                         the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
-
-
                 </div>
 
                 <div class="adv__items">
@@ -155,9 +151,9 @@
             <div class="weekly__slider">
                 <!-- item1 -->
                 <div class="weekly__products">
-                    <div class="weekly__product">                        
-                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">                           
-                        
+                    <div class="weekly__product">
+                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">
+
                         <div class="weekly__info">
                             <div class="weekly__info-title">One Page Resume Template</div>
                             <div class="weekly__info-autor">
@@ -190,7 +186,7 @@
                                     <a class="weekly__detail-likes"><span class="likes">46</span></a>
                                     <a class="weekly__detail-solds"><span class="solds">634</span> </a>
                                 </div>
-                                
+
                                 <div class="weekly__info-rates">
                                     <div class="rate-star"></div>
                                 </div>
@@ -200,9 +196,9 @@
                 </div>
                 <!-- item2 -->
                 <div class="weekly__products">
-                    <div class="weekly__product">                        
-                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">                           
-                        
+                    <div class="weekly__product">
+                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">
+
                         <div class="weekly__info">
                             <div class="weekly__info-title">One Page Resume Template</div>
                             <div class="weekly__info-autor">
@@ -235,7 +231,7 @@
                                     <a class="weekly__detail-likes"><span class="likes">46</span></a>
                                     <a class="weekly__detail-solds"><span class="solds">634</span> </a>
                                 </div>
-                                
+
                                 <div class="weekly__info-rates">
                                     <div class="rate-star"></div>
                                 </div>
@@ -245,9 +241,9 @@
                 </div>
                 <!-- item3 -->
                 <div class="weekly__products">
-                    <div class="weekly__product">                        
-                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">                           
-                        
+                    <div class="weekly__product">
+                        <img class="weekly__content-img" src="images/content/weekly.png" alt="">
+
                         <div class="weekly__info">
                             <div class="weekly__info-title">One Page Resume Template</div>
                             <div class="weekly__info-autor">
@@ -280,7 +276,7 @@
                                     <a class="weekly__detail-likes"><span class="likes">46</span></a>
                                     <a class="weekly__detail-solds"><span class="solds">634</span> </a>
                                 </div>
-                                
+
                                 <div class="weekly__info-rates">
                                     <div class="rate-star"></div>
                                 </div>
@@ -309,238 +305,271 @@
 
             <div class="products__categories">
                 <button class="products__categories-btn" type="button" data-filter=".category-plugins">Plugins</button>
-                <button class="products__categories-btn" type="button" data-filter=".category-wordpress">WordPress</button>
-                <button class="products__categories-btn" type="button" data-filter=".category-site_template">Site Template</button>
+                <button class="products__categories-btn" type="button"
+                    data-filter=".category-wordpress">WordPress</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-site_template">Site
+                    Template</button>
                 <button class="products__categories-btn" type="button" data-filter=".category-psd">PSD Template</button>
                 <button class="products__categories-btn" type="button" data-filter=".category-joomla">Joomla</button>
-                <button class="products__categories-btn" type="button" data-filter=".category-user_interface">User Interface</button>
-                <button class="products__categories-btn" type="button" data-filter=".category-landings_page">Landing Page</button>
-                <button class="products__categories-btn" type="button" data-filter=".category-software">Software</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-user_interface">User
+                    Interface</button>
+                <button class="products__categories-btn" type="button" data-filter=".category-landings_page">Landing
+                    Page</button>
+                <button class="products__categories-btn" type="button"
+                    data-filter=".category-software">Software</button>
             </div>
 
             <div class="products__catalogue">
                 <!-- item1 -->
-                <div class="product__item mix category-wordpress category-all" data-order="1" data-rate="2" data-price="20"> 
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-wordpress category-all" data-order="1" data-rate="2"
+                    data-price="20">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product1.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">E-commerce Shopping Cart</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">Theme-Valley</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">E-commerce Shopping Cart</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">Theme-Valley</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/wp.png);"> </div>
-                                <a class="product__type-name" href="#">Plugin</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/wp.png);">
+                                </div>
+                                <a class="products__type-name" href="#">Plugin</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$20</span></div>
-                        <div class="product__info-likes"><span class="likes">90</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$20</span></div>
+                        <div class="products__info-likes"><span class="likes">90</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">246</span></div>
+                        <div class="products__info-solds"><span class="solds">246</span></div>
                     </div>
                 </div>
                 <!-- item2 -->
-                <div class="product__item mix category-psd category-all" data-order="2" data-rate="1" data-price="18">
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product2.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-psd category-all" data-order="2" data-rate="1" data-price="18">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product2.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">Marketify Coffee Shop</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">EchoTheme</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">Marketify Coffee Shop</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">EchoTheme</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/psd.png);"></div>
-                                <a class="product__type-name" href="#">PSD</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/psd.png);">
+                                </div>
+                                <a class="products__type-name" href="#">PSD</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$18</span></div>
-                        <div class="product__info-likes"><span class="likes">48</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$18</span></div>
+                        <div class="products__info-likes"><span class="likes">48</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">50</span></div>
+                        <div class="products__info-solds"><span class="solds">50</span></div>
                     </div>
                 </div>
                 <!-- item3 -->
-                <div class="product__item mix category-site_template category-all" data-order="3" data-rate="3" data-price="35">
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-site_template category-all" data-order="3" data-rate="3"
+                    data-price="35">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product1.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">Bryson - Portfolio Template</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">Artcorner</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">Bryson - Portfolio Template</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">Artcorner</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/html.png);"></div>
-                                <a class="product__type-name" href="#">HTML</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/html.png);">
+                                </div>
+                                <a class="products__type-name" href="#">HTML</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$10</span></div>
-                        <div class="product__info-likes"><span class="likes">56</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$10</span></div>
+                        <div class="products__info-likes"><span class="likes">56</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">68</span></div>
+                        <div class="products__info-solds"><span class="solds">68</span></div>
                     </div>
                 </div>
                 <!-- item4 -->
-                <div class="product__item mix category-plugins category-all" data-order="1" data-rate="4" data-price="10">
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-plugins category-all" data-order="1" data-rate="4"
+                    data-price="10">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product1.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">E-commerce Shopping Cart</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">Design-Hub</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">E-commerce Shopping Cart</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">Design-Hub</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/wp.png);"></div>
-                                <a class="product__type-name" href="#">Plugin</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/wp.png);">
+                                </div>
+                                <a class="products__type-name" href="#">Plugin</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$10-50</span></div>
-                        <div class="product__info-likes"><span class="likes">90</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$10-50</span></div>
+                        <div class="products__info-likes"><span class="likes">90</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">45</span></div>
+                        <div class="products__info-solds"><span class="solds">45</span></div>
                     </div>
                 </div>
                 <!-- item5 -->
-                <div class="product__item mix category-psd category-all" data-order="2" data-rate="5" data-price="100">
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product2.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-psd category-all" data-order="2" data-rate="5" data-price="100">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product2.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">Marketify Coffee Shop</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">AazzTech</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">Marketify Coffee Shop</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">AazzTech</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/psd.png);"></div>
-                                <a class="product__type-name" href="#">PSD</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/psd.png);">
+                                </div>
+                                <a class="products__type-name" href="#">PSD</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$10-50</span></div>
-                        <div class="product__info-likes"><span class="likes">48</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$10-50</span></div>
+                        <div class="products__info-likes"><span class="likes">48</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">50</span></div>
+                        <div class="products__info-solds"><span class="solds">50</span></div>
                     </div>
                 </div>
 
                 <!-- item6 -->
-                <div class="product__item mix category-site_template category-all" data-order="3" data-rate="6" data-price="60">
-                    <div class="product__item-content">
-                        <a class="product__content-img" href="#" style="background-image: url(images/content/product1.jpg);"></a>
-                        <div class="product__content-hover">
-                            <a class="product__content-btn" href="#">More Info</a>
-                            <a class="product__content-btn" href="#">Live Demo</a>
+                <div class="products__item mix category-site_template category-all" data-order="3" data-rate="6"
+                    data-price="60">
+                    <div class="products__item-content">
+                        <a class="products__content-img" href="#"
+                            style="background-image: url(images/content/product1.jpg);"></a>
+                        <div class="products__content-hover">
+                            <a class="products__content-btn" href="#">More Info</a>
+                            <a class="products__content-btn" href="#">Live Demo</a>
                         </div>
                     </div>
 
-                    <div class="product__item-desc">
-                        <a class="product__desc-title" href="#">Bryson - Portfolio Template</a>
-                        <div class="product__desc-links">
-                            <div class="product__desc-autor">
-                                <div class="product__autor-avatar" style="background-image: url(images/content/ava.png);"></div>
-                                <a class="product__autor-name" href="#">Coder-Lab</a>
+                    <div class="products__item-desc">
+                        <a class="products__desc-title" href="#">Bryson - Portfolio Template</a>
+                        <div class="products__desc-links">
+                            <div class="products__desc-autor">
+                                <div class="products__autor-avatar"
+                                    style="background-image: url(images/content/ava.png);"></div>
+                                <a class="products__autor-name" href="#">Coder-Lab</a>
                             </div>
 
-                            <div class="product__desc-type">
-                                <div class="product__type-img" style="background-image: url(images/content/html.png);"></div>
-                                <a class="product__type-name" href="#">HTML</a>
+                            <div class="products__desc-type">
+                                <div class="products__type-img" style="background-image: url(images/content/html.png);">
+                                </div>
+                                <a class="products__type-name" href="#">HTML</a>
                             </div>
                         </div>
 
-                        <div class="product__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</div>
+                        <div class="products__desc-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                            justo ut scelerisque the mattis, leo quam aliquet congue.</div>
                     </div>
 
-                    <div class="product__item-info">
-                        <div class="product__info-price"><span class="price">$10</span></div>
-                        <div class="product__info-likes"><span class="likes">56</span></div>
-                        <div class="product__info-rates">
+                    <div class="products__item-info">
+                        <div class="products__info-price"><span class="price">$10</span></div>
+                        <div class="products__info-likes"><span class="likes">56</span></div>
+                        <div class="products__info-rates">
                             <div class="rate-star"></div>
                         </div>
-                        <div class="product__info-solds"><span class="solds">68</span></div>
+                        <div class="products__info-solds"><span class="solds">68</span></div>
                     </div>
-                </div>                             
-            </div> 
+                </div>
+            </div>
 
             <div class="products__all">
                 <button class="products__all-btn" type="button" data-filter=".category-all">All New Products</button>
-            </div> 
+            </div>
         </div>
     </section>
 
