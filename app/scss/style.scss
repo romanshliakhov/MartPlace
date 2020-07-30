@@ -406,7 +406,7 @@
 // advantage start
 .adv {
     padding-top: 186px;
-    padding-bottom: 120px;
+    padding-bottom: 70px;
 
     &__inner {
         display: flex;
@@ -474,7 +474,7 @@
         border-radius: 50px;
     }
 
-    &__arrow {        
+    &__arrows {        
         border: none;
         color: transparent;
         outline: none;
@@ -482,36 +482,37 @@
         font-size: 0px;
         position: relative;
         outline: none;
+
+    }
+    
+    &__arrow {
+        font-family: "Linearicons-Free";
+        position: absolute;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 14px;
+        color: #fff;
     }
 
     &__arrow-prev {
         margin-left: 25px;
 
-        &::before {
-            content: "\e875";
-            font-family: "Linearicons-Free";
-            position: absolute;
-            cursor: pointer;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-size: 14px;
-            color: #fff;
+        &::before,
+        &:hover {
+            content: "\e875";                       
+            transform: scale(1.5)
         }
     }
 
     &__arrow-next {
-        padding-left: 15px;
-
-        &::before {
-            content: "\e876";
-            font-family: "Linearicons-Free";
-            position: absolute;
-            cursor: pointer;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-size: 14px;
-            color: #fff;
-        }
+        margin-left: 44px;
+        
+        &::before,
+        &:hover {
+            content: "\e876";            
+            transform: scale(1.5);                                   
+        }         
     }
 
     &__product {
@@ -557,6 +558,10 @@
         font-size: 15px;
         font-weight: 500;
         color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__autor-cms {
@@ -570,6 +575,11 @@
         font-size: 15px;
         font-weight: 500;
         color: $purple;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__info-desc {
@@ -588,11 +598,17 @@
     &__tag {
         color: $shadowgrey;
         border-radius: 14px;
-        background-color: #f1f3f6;
+        background-color: $btncolor;
         padding: 7px 14px;
         border: none;
         outline: transparent;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
     }
 
     &__info-details {
@@ -616,12 +632,19 @@
         padding: 9px 18px;
         border-radius: 16px;
         margin-right: 19px;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__detail-likes {
         position: relative;
         padding-left: 22px;
         margin-right: 15px;
+        transition: 0.3s;
+        border:none;
 
         &::before {
             content: "\e813";
@@ -636,12 +659,18 @@
             color: $purple;
             cursor: pointer;
         }
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__detail-solds {
         position: relative;
         padding-left: 22px;
         margin-right: 15px;
+        transition: 0.3s;
+        border:none;
 
         &::before {
             content: "\e82e";
@@ -651,7 +680,11 @@
             color: $blue;
             left: 0;
             top: 0;
-            cursor: pointer;
+            cursor: pointer;                    
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -659,21 +692,24 @@
 // products start
 .products {
     padding: 120px 0;
-    background-color: $hex;
+    background-color: $bgproucts;
 
-    &__header {
+    &__inner {
         margin-bottom: 30px;
         display: flex;
         align-items: center;
-        padding: 39px 0px 41px 30px;
-        color: #000;
-        font-size: 30px;
+        padding: 39px 0px 41px 30px;        
         box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
         background-color: #fff;
     }
 
-    &__header-filter {
+    &__inner-title {
+        color: #000;
+        font-size: 30px;
+    }
+    
+    &__inner-filter {
         color: $shadowgrey;
         font-size: 16px;
         margin-left: auto;
@@ -687,17 +723,17 @@
             position: absolute;
             background-image: url(../images/icons/dots.svg);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: contain;            
             right: 30px;
             height: 20px;
             width: 5px;
         }
     }
 
-    &__filter-inner {
-        // display: none;
+    &__filter {
+        opacity: 0;
         position: absolute;
-        top: 40px;
+        top: 35px;
         right: 10px;
         padding: 27px 28px;
         min-width: 183px;
@@ -707,20 +743,15 @@
         line-height: 28px;
         box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
         border-radius: 3px;
-        line-height: 25px;
-        z-index: 1;
-        transition: 0.3s;
+        line-height: 25px;        
+        transition: 0.3s;     
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 27px;
-            top: -27px;
-            left: 0;
-        }
-    }
-
+        &:hover {
+            display:block;
+            opacity: 1;
+        }         
+    } 
+   
     &__filter-btn {
         background-color: #fff;
         border: none;
@@ -765,7 +796,7 @@
 
         &:hover {
             background-color: $blue;
-            color: #fff;
+            color: #fff;            
         }
     }
 
@@ -817,7 +848,7 @@
 
         &:hover {
             border-radius: 4px 4px 0 0;
-            opacity: 1;
+            opacity: 1;            
         }
     }
 
@@ -830,13 +861,14 @@
         transition: 0.3s;
         font-size: 15px;
         font-weight: 500;
+        transition: 0.3s;
 
         &:hover {
             background-color: #fff;
             color: $blue;
             font-size: 16px;
             font-weight: 700;
-            border-radius: 28px;
+            border-radius: 28px;            
         }
     }
 
@@ -877,6 +909,11 @@
         font-size: 15px;
         line-height: 30px;
         color: #000;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration: underline;            
+        }
     }
 
     &__desc-type {
@@ -899,12 +936,17 @@
         line-height: 30px;
         color: $purple;
         margin-left: 5px;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration: underline;            
+        }
     }
 
     &__desc-text {
         font-size: 16px;
         line-height: 30px;
-        color: #555;
+        color: $desctext;
     }
 
     &__item-info {
@@ -920,12 +962,13 @@
         color: $blue;
         background-color: rgba(6, 116, 236, 0.1);
         padding: 7px 17px;
-        border-radius: 15px;
+        border-radius: 15px;       
     }
 
     &__info-likes {
         position: relative;
         padding-left: 22px;
+        transition: 0.5s;
 
         &::before {
             content: "\e813";
@@ -940,6 +983,10 @@
             color: $purple;
             cursor: pointer;
         }
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__info-solds {
@@ -950,11 +997,18 @@
             content: "\e82e";
             position: absolute;
             font-size: 15px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             font-family: "Linearicons-Free";
-            color: #0674ec;
+            color: $blue;
             left: 0;
             top: 0;
             cursor: pointer;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 

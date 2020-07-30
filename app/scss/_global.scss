@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-*, 
+*,
 *::before,
 *::after {
     box-sizing: inherit;
@@ -20,7 +20,7 @@ body {
 
 .container {
     max-width: 1170px;
-    margin: 0 auto;    
+    margin: 0 auto;
     padding: 0 15px;
 }
 

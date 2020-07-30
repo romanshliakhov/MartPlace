@@ -11,8 +11,8 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         fade: true,        
-        nextArrow: '<button type="submit" class="weekly__arrow"><div class="weekly__arrow-next"></div></button>',
-        prevArrow: '<button type="submit" class="weekly__arrow"><div class="weekly__arrow-prev"></div></button>',    
+        nextArrow: '<button type="submit" class="weekly__arrows"><div class="weekly__arrow weekly__arrow-next"></div></button>',
+        prevArrow: '<button type="submit" class="weekly__arrows"><div class="weekly__arrow weekly__arrow-prev"></div></button>',    
         appendArrows: $('.weekly__inner-arrows'),            
     });
     
