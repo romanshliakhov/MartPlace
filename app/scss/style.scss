@@ -194,7 +194,7 @@
 
     &__search {
         margin-left: auto;
-        position: relative;       
+        position: relative;
     }
 
     &__search-input {
@@ -209,7 +209,7 @@
         color: $tinput;
         transition: 0.3s;
 
-        
+
         &:hover,
         &:active {
             border: 2px solid $blue;
@@ -242,6 +242,7 @@
         }
     }
 }
+
 // nav end
 // view section
 .view {
@@ -396,10 +397,11 @@
         &:hover {
             background-color: $blue;
             color: #fff;
-            font-weight: 700;
+            transform: scale(0.9)
         }
     }
 }
+
 // view end
 // advantage start
 .adv {
@@ -421,6 +423,7 @@
         &:hover {
             border-radius: 4px;
             box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+            transform: scale(1.2)
         }
     }
 
@@ -466,12 +469,12 @@
 
     &__inner-arrows {
         min-height: 45px;
-        width: 110px;
+        width: 110px;        
         background-color: $purple;
         border-radius: 50px;
     }
 
-    .slick-btn {
+    &__arrow {        
         border: none;
         color: transparent;
         outline: none;
@@ -481,34 +484,34 @@
         outline: none;
     }
 
-    .slick-prev {
-        left: 25px;
+    &__arrow-prev {
+        margin-left: 25px;
+
+        &::before {
+            content: "\e875";
+            font-family: "Linearicons-Free";
+            position: absolute;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 14px;
+            color: #fff;
+        }
     }
 
-    .slick-next {
-        left: 45px;
-    }
+    &__arrow-next {
+        padding-left: 15px;
 
-    .slick-prev:before {
-        content: "\e875";
-        font-family: "Linearicons-Free";
-        position: absolute;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-position: center;
-        font-size: 14px;
-        color: #fff;
-    }
-
-    .slick-next:before {
-        content: "\e876";
-        font-family: "Linearicons-Free";
-        position: absolute;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-position: center;
-        font-size: 14px;
-        color: #fff;
+        &::before {
+            content: "\e876";
+            font-family: "Linearicons-Free";
+            position: absolute;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 14px;
+            color: #fff;
+        }
     }
 
     &__product {
@@ -633,7 +636,6 @@
             color: $purple;
             cursor: pointer;
         }
-
     }
 
     &__detail-solds {
@@ -652,12 +654,9 @@
             cursor: pointer;
         }
     }
-
 }
-
-
-    // weekly end 
-    // products start
+// weekly end 
+// products start
 .products {
     padding: 120px 0;
     background-color: $hex;
@@ -982,7 +981,5 @@
             color: $blue;
             border: 1px solid $blue;
         }
-
-
     }
 }

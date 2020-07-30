@@ -10,10 +10,10 @@ $(function(){
     $('.weekly__slider').slick({        
         autoplay: true,
         autoplaySpeed: 3000,
-        fade: true,
-        appendArrows: $('.weekly__inner-arrows'),
-        nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',                
+        fade: true,        
+        nextArrow: '<button type="submit" class="weekly__arrow"><div class="weekly__arrow-next"></div></button>',
+        prevArrow: '<button type="submit" class="weekly__arrow"><div class="weekly__arrow-prev"></div></button>',    
+        appendArrows: $('.weekly__inner-arrows'),            
     });
     
     var mixer = mixitup('.products__catalogue');
