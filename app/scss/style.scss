@@ -15,12 +15,12 @@
     }
 
     &__inner-logo {
-        margin-left: 7px;
+        margin-left: 15px;
     }
 
     &__sign {
         margin-left: auto;
-        margin-right: 40px;
+        margin-right: 44px;
         padding: 4px 18px;
         background-color: $blue;
         border-radius: 18px;
@@ -76,7 +76,7 @@
             transform: rotateZ(10deg);
         }
     }
-
+// ОСТАНОВИЛСЯ PIXELPERFECT
     &__info {
         position: absolute;
         top: -11px;
